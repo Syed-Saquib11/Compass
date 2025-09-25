@@ -1,0 +1,201 @@
+{
+  "0": {
+    "question": "Where should I start?",
+    "options": [
+      {"text": "Fantasy", "next": "01"},
+      {"text": "Sci-Fi", "next": "q2"},
+      {"text": "Neither, Give me Something else", "next": "q2"}
+    ]
+  },
+  "01": {
+    "question": "Are you gonna be upset when you dont find harry potter?",
+    "options": [
+      {"text": "Yes, give me more precious lad at schools of magic please.", "next": "book1"},
+      {"text": "No, i know where to find him if i need him.", "next": "011"}
+    ]
+  },
+  "011": {
+    "question": "Are you new to fantasy?",
+    "options": [
+      {"text": "Yes, I am beginner", "next": "book2", "special": true},
+      {"text": "Not really, I am somewhat well acquainted", "next": "0112"},
+      {"text": "Maybe, does wizard of Oz count? ", "next": "book4"}
+      ]
+  },
+  "0112": {
+    "question": "Do you like Arthurian legends?",
+    "options": [
+      {"text": "Yes, I love the tales of King Arthur and his knights.", "next": "01121"},
+      {"text": "Not really, I prefer other types of fantasy.", "next": "01122"}
+    ]
+  },
+  "01121": {
+    "question": "Which character you likes the most?",
+    "options": [
+      {"text": "Arthur", "next": "book5"},
+      {"text": "Merlin", "next": "book6"},
+      {"text": "Morgan le Fay", "next": "book7"}
+    ]
+  },
+  "01122": {
+    "question": "Looking for Modern setting?",
+    "options": [
+      {"text": "Yes, I am city person.", "next": "011221"},
+      {"text": "No, Lets find another world. This one is dipressing enough", "next": "011222"},
+      {"text": "Maybe, I am partial to small towns", "next": "book8"}
+    ]
+  },
+  "011221": {
+    "question": "Gods or people under the streets?",
+    "options": [
+      {"text": "Modern Mythology", "next": "book9"},
+      {"text": "A world beneath the City", "next": "book10"}
+    ]
+  },
+  "011222": {
+    "question": "Fan of Western?",
+    "options": [
+      {"text": "Absolutely, bring on the guns and grit.", "next": "book11"},
+      {"text": "Nah, too dusty. I’m not much of a gunslinger anyway", "next": "0112221"}
+    ]
+  },
+  "0112221": {
+    "question": "Animals more your thing?",
+    "options": [
+      {"text": "Yes, They make my heart race", "next": "01122211"},
+      {"text": "No, I’ll pass — animals are too much responsibility.", "next": "01122212"}
+    ]
+  },
+  "01122211": {
+    "question": "Your ideal pet?",
+    "options": [
+      {"text": "Unicorn", "next": "book12"},
+      {"text": "Bunny", "next": "book13"},
+      {"text": "Dragon", "next": "book14"}
+    ]
+  },
+  "01122212": {
+    "question": "How about Alternate History?",
+    "options": [
+      {"text": "Yes, I'm Revisionist myself", "next": "011222121"},
+      {"text": "I have never paid any attention in history class", "next": "011222122"}
+    ]
+  },
+  "011222121": {
+    "question": "Romance or Warring Magicians?",
+    "options": [
+      {"text": "Romance", "next": "book15"},
+      {"text": "Warring Magicians", "next": "book16"}
+    ]
+  },
+  "011222122": {
+    "question": "Ready to dive into series?",
+    "options": [
+      {"text": "Yes", "next": "0112221221"},
+      {"text": "Maybe, How about an episodic series?", "next": "0112221222"},
+      {"text": "No, Lets keep this casual", "next": "0112221223"}
+    ]
+  },
+  "0112221222": {
+    "question": "What's your pleasure?",
+    "options": [
+      {"text": "Bureaucratic satire", "next": "book19"},
+      {"text": "Religious satire", "next": "book20"},
+      {"text": "Fun with puns", "next": "book21"}
+    ]
+  },
+  "0112221223": {
+    "question": "With pirates or without?",
+    "options": [
+      {"text": "Yes, Pirates please", "next": "book18"},
+      {"text": "No, No pirates allowed here", "next": "book17"}
+    ]
+  },
+  "0112221221": {
+    "question": "Do series have to be finished?",
+    "options": [
+      {"text": "Yes, I am not very patient", "next": "01122212211"},
+      {"text": "No, I like to be held in suspense.", "next": "01122212212"}
+    ]
+  },
+  "01122212212": {
+    "question": "Taking the high road or low road?",
+    "options": [
+      {"text": "High Fantasy", "next": "book23"},
+      {"text": "Low Fantasy", "next": "book22"}
+    ]
+  },
+  "01122212211": {
+    "question": "Do 'Sword and Sorcery' have positive connotation on you?",
+    "options": [
+      {"text": "Yes, Wizards and Barbarians. Whats not to like", "next": "011222122111"},
+      {"text": "No, Not my cup of tea", "next": "011222122112"}
+      ]
+  },
+  "011222122111": {
+    "question": "Roleplayer?",
+    "options": [
+      {"text": "Yes", "next": "book24"},
+      {"text": "No", "next": "0112221221111"}
+    ]
+  },
+  "0112221221111":{
+    "question": "More Wizards or Barbarian?",
+    "options": [
+      {"text": "Barbarian", "next": "book25"},
+      {"text": "Wizards", "next": "book26"}
+    ]
+  },
+  "011222122112":{
+    "question": "Looking for old fashioned trilogies?",
+    "options": [
+      {"text": "Yes, three is my lucky number", "next": "0112221221121"},
+      {"text": "Maybe, How about trilogy of trilogies?", "next": "book31"},
+      {"text": "No, in for a penny in for a pound", "next": "0112221221122"}
+    ]
+  },
+  "0112221221121":{
+    "question": "What shall we read about?",
+    "options": [
+      {"text": "Theives", "next": "book27"},
+      {"text": "MacGuffins", "next": "book28"},
+      {"text": "Assassins", "next": "book29"},
+      {"text": "Magicians", "next": "book30"}
+    ]
+  },
+  "0112221221122":{
+    "question": "So, 5 or 6 books enough for you?",
+    "options": [
+      {"text": "Yes, that should keep me busy.", "next": "01122212211221"},
+      {"text": "No, I shall require atleast ten.", "next": "01122212211222"}
+    ]
+  },
+  "01122212211221":{
+    "question": "A mix of ancient Roman-style culture with elemental magic geeks you out the most — or are you more into stories where a prophecy shapes a hero’s journey?",
+    "options": [
+      {"text": "I love me some elemental magic and Roman vibes", "next": "book32"},
+      {"text": "I like stories driven by prophecy and destiny.", "next": "book33"}
+    ]
+  },
+  "01122212211222":{
+    "question": "Enjoy quest to prevent great evil from conquering the world?",
+    "options": [
+      {"text": "Yes. Good vs Evil on epic scale, please", "next": "011222122112221"},
+      {"text": "No. I need a little more complexity.", "next": "011222122112222"}
+    ]
+  },
+  "011222122112221":{
+    "question": "Who will save us?",
+    "options": [
+      {"text": "The Seeker of Truth", "next": "book34"},
+      {"text": "The One Power", "next": "book35"}
+    ]
+  },
+  "011222122112222":{
+    "question": "Choose wisely, this is the end.",
+    "options": [
+      {"text": "Earth in Shadows", "next": "book36"},
+      {"text": "Weaving Timelines", "next": "book37"}
+    ]
+  }
+}

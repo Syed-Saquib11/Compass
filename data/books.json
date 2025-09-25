@@ -1,0 +1,228 @@
+{
+    "book2": {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "description": "An epic high-fantasy novel and adventure featuring a quest to destroy the One Ring.",
+    "cover": "assets/images/lotr.jpg",
+    "secondary": {
+      "text": "Not that new? Try The Silmarillion!",
+      "next": "book3"
+    }
+  },
+  "book3": {
+    "title": "The Silmarillion",
+    "author": "J.R.R. Tolkien",
+    "description": "Tolkien's mythopoeic prequel, a deeper dive into Middle-earth lore.",
+    "cover": "assets/images/silmarillion.jpg"
+  },
+  "book1": {
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "description": "The story of a magically gifted young man who grows up to become a legendary wizard.",
+    "cover": "assets/images/name_of_the_wind.jpg"
+  },
+  "book4": {
+    "title": "Wicked",
+    "author": "Gregory Maguire",
+    "description": "A retelling of the Wizard of Oz story from the perspective of the Wicked Witch of the West, exploring morality and destiny.",
+    "cover": "assets/images/wicked.jpg"
+  },
+  "book5": {
+    "title": "The Once and Future King",
+    "author": "T.H. White",
+    "description": "A modern retelling of the Arthurian legends, blending humor, tragedy, and philosophy.",
+    "cover": "assets/images/once_future_king.jpg"
+  },
+  "book6": {
+    "title": "The Crystal Cave",
+    "author": "Mary Stewart",
+    "description": "A vivid reimagining of Merlin’s early life, mixing history and Arthurian myth.",
+    "cover": "assets/images/crystal_cave.jpg"
+  },
+  "book7": {
+    "title": "The Mists of Avalon",
+    "author": "Marion Zimmer Bradley",
+    "description": "The Arthurian saga retold from the perspective of Morgan le Fay and the women around King Arthur.",
+    "cover": "assets/images/mists_of_avalon.jpg"
+  },
+  "book8": {
+    "title": "Something Wicked This Way Comes",
+    "author": "Ray Bradbury",
+    "description": "A dark fantasy tale of two boys who encounter a sinister traveling carnival.",
+    "cover": "assets/images/something_wicked.jpg"
+  },
+  "book9": {
+    "title": "American Gods",
+    "author": "Neil Gaiman",
+    "description": "A sweeping blend of Americana, fantasy, and mythology as old gods battle new.",
+    "cover": "assets/images/american_gods.jpg"
+  },
+  "book10": {
+    "title": "Neverwhere",
+    "author": "Neil Gaiman",
+    "description": "A dark urban fantasy about a hidden world beneath London, full of strange characters and dangers.",
+    "cover": "assets/images/neverwhere.jpg"
+  },
+  "book11": {
+    "title": "The Dark Tower",
+    "author": "Stephen King",
+    "description": "An epic blend of fantasy, western, and horror following Roland the Gunslinger’s quest for the Dark Tower.",
+    "cover": "assets/images/dark_tower.jpg"
+  },
+  "book12": {
+    "title": "The Last Unicorn",
+    "author": "Peter S. Beagle",
+    "description": "A lyrical fantasy about a unicorn’s quest to discover what happened to the rest of her kind.",
+    "cover": "assets/images/last_unicorn.jpg"
+  },
+  "book13": {
+    "title": "Watership Down",
+    "author": "Richard Adams",
+    "description": "An allegorical adventure following a band of rabbits searching for a new home.",
+    "cover": "assets/images/watership_down.jpg"
+  },
+  "book14": {
+    "title": "Dragonflight",
+    "author": "Anne McCaffrey",
+    "description": "The first of the Dragonriders of Pern series, where humans and dragons bond to protect their world.",
+    "cover": "assets/images/dragonflight.jpg"
+  },
+  "book15": {
+    "title": "Kushiel’s Dart",
+    "author": "Jacqueline Carey",
+    "description": "A lush fantasy of politics, intrigue, and forbidden desires, centered around the courtesan-spy Phèdre.",
+    "cover": "assets/images/kushiels_dart.jpg"
+  },
+  "book16": {
+    "title": "Jonathan Strange & Mr. Norrell",
+    "author": "Susanna Clarke",
+    "description": "An alternate history of 19th-century England where two magicians change the fate of a nation.",
+    "cover": "assets/images/jonathan_strange.jpg"
+  },
+  "book17": {
+    "title": "Stardust",
+    "author": "Neil Gaiman",
+    "description": "A fairy-tale-like fantasy where a young man ventures into a magical realm to retrieve a fallen star.",
+    "cover": "assets/images/stardust.jpg"
+  },
+  "book18": {
+    "title": "The Princess Bride",
+    "author": "William Goldman",
+    "description": "A whimsical fantasy romance full of fencing, fighting, true love, and high adventure.",
+    "cover": "assets/images/princess_bride.jpg"
+  },
+  "book19": {
+    "title": "Going Postal",
+    "author": "Terry Pratchett",
+    "description": "Part of the Discworld series: a con artist is given one last chance to redeem himself by running the city’s postal service.",
+    "cover": "assets/images/going_postal.jpg"
+  },
+  "book20": {
+    "title": "Small Gods",
+    "author": "Terry Pratchett",
+    "description": "A satirical Discworld novel exploring faith, philosophy, and the nature of belief.",
+    "cover": "assets/images/small_gods.jpg"
+  },
+  "book21": {
+    "title": "The Xanth Series",
+    "author": "Piers Anthony",
+    "description": "A long-running, pun-filled fantasy series set in the magical land of Xanth.",
+    "cover": "assets/images/xanth.jpg"
+  },
+  "book22": {
+    "title": "A Song of Ice and Fire",
+    "author": "George R.R. Martin",
+    "description": "The gritty, sprawling saga that inspired Game of Thrones, full of political intrigue, war, and betrayal.",
+    "cover": "assets/images/asoiaf.jpg"
+  },
+  "book23": {
+    "title": "The Way of Kings",
+    "author": "Brandon Sanderson",
+    "description": "An epic of shattered oaths and legendary warriors, where the fate of kingdoms hangs on broken promises",
+    "cover": "assets/images/way_of_kings.jpg"
+  },
+  "book24": {
+    "title": "The Legend of Drizzt",
+    "author": "R.A. Salvatore",
+    "description": "The iconic dark elf ranger’s adventures across the Forgotten Realms.",
+    "cover": "assets/images/drizzt.jpg"
+  },
+  "book25": {
+    "title": "The Chronicles of Conan",
+    "author": "Robert E. Howard",
+    "description": "Sword and sorcery tales featuring Conan the Barbarian in all his raw, primal glory.",
+    "cover": "assets/images/conan.jpg"
+  },
+  "book26": {
+    "title": "The Elric Saga",
+    "author": "Michael Moorcock",
+    "description": "A dark fantasy series about Elric of Melniboné, a doomed sorcerer-king wielding a soul-drinking sword.",
+    "cover": "assets/images/elric.jpg"
+  },
+  "book27": {
+    "title": "Mistborn",
+    "author": "Brandon Sanderson",
+    "description": "A unique magic system powered by metals fuels a revolution against a tyrant in a dark world.",
+    "cover": "assets/images/mistborn.jpg"
+  },
+  "book28": {
+    "title": "The Sword of Shannara",
+    "author": "Terry Brooks",
+    "description": "A classic epic fantasy quest that launched one of the most popular modern fantasy series.",
+    "cover": "assets/images/shannara.jpg"
+  },
+  "book29": {
+    "title": "The Farseer Trilogy",
+    "author": "Robin Hobb",
+    "description": "A coming-of-age fantasy about Fitz, a royal bastard trained as an assassin in a world of political intrigue.",
+    "cover": "assets/images/farseer.jpg"
+  },
+  "book30": {
+    "title": "The Riftwar Saga",
+    "author": "Raymond E. Feist",
+    "description": "A tale of two worlds at war, combining epic fantasy with interdimensional conflict.",
+    "cover": "assets/images/riftwar.jpg"
+  },
+  "book31": {
+    "title": "The Chronicles of Thomas Covenant",
+    "author": "Stephen R. Donaldson",
+    "description": "A controversial anti-hero’s reluctant journey through a magical land he doesn’t believe is real.",
+    "cover": "assets/images/thomas_covenant.jpg"
+  },
+  "book32": {
+    "title": "The Codex Alera",
+    "author": "Jim Butcher",
+    "description": "A Roman-inspired fantasy world where elemental magic and military strategy collide.",
+    "cover": "assets/images/codex_alera.jpg"
+  },
+  "book33": {
+    "title": "The Belgariad",
+    "author": "David Eddings",
+    "description": "A classic five-book fantasy series following Garion, an ordinary boy caught up in prophecy.",
+    "cover": "assets/images/belgariad.jpg"
+  },
+  "book34": {
+    "title": "The Sword of Truth Series",
+    "author": "Terry Goodkind",
+    "description": "A sprawling epic fantasy exploring magic, morality, and power struggles.",
+    "cover": "assets/images/sword_of_truth.jpg"
+  },
+  "book35": {
+    "title": "The Wheel of Time",
+    "author": "Robert Jordan",
+    "description": "A massive, richly detailed epic spanning 14 volumes, full of prophecy, politics, and magic.",
+    "cover": "assets/images/wheel_of_time.jpg"
+  },
+  "book36": {
+    "title": "The Chronicles of Amber",
+    "author": "Roger Zelazny",
+    "description": "A mind-bending fantasy about princes who can walk between infinite parallel worlds.",
+    "cover": "assets/images/amber.jpg"
+  },
+  "book37": {
+    "title": "The Malazan Book of the Fallen",
+    "author": "Steven Erikson",
+    "description": "One of the most complex epic fantasies ever written, with vast world-building, massive battles, and deep themes.",
+    "cover": "assets/images/malazan.jpg"
+  }
+}

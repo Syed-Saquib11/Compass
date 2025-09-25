@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compass - Your Fantasy Book Quiz</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Compass</h1>
+      <p>Your guide to the perfect fantasy book</p>
+    </header>
+
+    <main id="quiz-container">
+      <div id="question-container" class="hidden">
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="back-btn" class="back-button hidden">Back</button> 
+      </div>
+      <div id="result-container" class="hidden">
+        <h2>Book Recommendation</h2>
+        <div id="book-title"></div>
+        <div id="book-description"></div>
+
+      <div class="button-group">
+  <button id="back-btn-result" class="back-button">Back</button>
+  <button id="restart-btn">Restart Quiz</button>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>Powered by Compass</p>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
