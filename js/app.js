@@ -18,7 +18,7 @@ let history = [];
 async function loadQuizData() {
   try {
     console.log("Fetching quiz data...");
-    const quizResponse = await fetch("data/quizData.json");
+    const quizResponse = await fetch("data/quizdata.json");
     if (!quizResponse.ok) throw new Error("Quiz data fetch failed");
     quizData = await quizResponse.json();
     console.log("Quiz data loaded.");
