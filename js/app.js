@@ -153,3 +153,4 @@ backBtn.addEventListener("click", goBack);
 if (backBtnResult) backBtnResult.addEventListener("click", goBack);
 
 loadQuizData();
+
