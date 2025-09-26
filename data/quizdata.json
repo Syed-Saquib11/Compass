@@ -3,7 +3,7 @@
     "question": "Where should I start?",
     "options": [
       {"text": "Fantasy", "next": "01"},
-      {"text": "Sci-Fi", "next": "q2"},
+      {"text": "Sci-Fi", "next": "02"},
       {"text": "Neither, Give me Something else", "next": "q2"}
     ]
   },
@@ -196,6 +196,157 @@
     "options": [
       {"text": "Earth in Shadows", "next": "book36"},
       {"text": "Weaving Timelines", "next": "book37"}
+    ]
+  },
+  "02": {
+    "question": "Cyberpunk?",
+    "options": [
+      {"text": "Yes, Jack me in I am ready for Neon grind", "next": "021"},
+      {"text": "Maybe, Can I get geek without bleak?", "next": "book41"},
+      {"text": "I'll pass, give me something less wierd", "next": "022"}
+      ]
+  },
+  "021": {
+    "question": "Gritty Noir, Neo-Victorian, or Samurai?",
+    "options": [
+      {"text": "Noir", "next": "book38"},
+      {"text": "Funny hats please", "next": "book39"},
+      {"text": "Samurai", "next": "book40"}
+    ]
+},
+  "022": {
+    "question": "Ready to blast off into space?",
+    "options": [
+      {"text": "Yes, I want to explore the final frontier", "next": "0221"},
+      {"text": "Maybe, Lets just stay close. I am new at this.", "next": "book53"},
+      {"text": "No, I prefer to keep my feet on the ground", "next": "0223"}
+    ]
+  },
+  "0222":{
+    "question": "Is the Mars fine?",
+    "options": [
+      {"text": "Yes, I am good with Mars", "next": "02221"},
+      {"text": "No, give me something on ground", "next": "0223"}
+    ]
+  },
+  "02221":{
+    "question": "What would you like to see from the red planet?",
+    "options": [
+      {"text": "Vignettes", "next": "book55"},
+      {"text": "Environmentalism", "next": "book54"},
+      {"text": "Through the looking glass", "next": "book56"}
+    ]
+  },
+  "0223":{
+    "question": "Don't you mean Under the ground?",
+    "options": [
+      {"text": "Yes, give me some subterranean action", "next": "02231"},
+      {"text": "No, I said 'on' smart guy", "next": "02232"}
+    ]
+  },
+  "02231":{
+    "question": "Wet or Dry?",
+    "options": [
+      {"text": "Underground", "next": "book42"},
+      {"text": "Under water", "next": "book43"}
+    ]
+  },
+  "02232":{
+    "question": "Politics, Religion, or Philosophy?",
+    "options": [
+      {"text": "Yes please.", "next": "book44"},
+      {"text": "Read my lips", "next": "022321"},
+      {"text": "No, These things are not polite to talk about in public. Dont you guys read about time travel or something?", "next": "022322"}
+    ]
+  },
+  "022321":{
+    "question": "What interests you the most?",
+    "options": [
+      {"text": "Feminism", "next": "book45"},
+      {"text": "Communism", "next": "book46"},
+      {"text": "Catholicism", "next": "book47"},
+      {"text": "Humanism", "next": "book48"}
+    ]
+  },
+  "022322":{
+    "question": "Sure do. Modern or Classic?",
+    "options": [
+      {"text": "Modern", "next": "book50"},
+      {"text": "Classic", "next": "book49"},
+      {"text": "Actually I am out of my comfort zone.", "next": "0223221"}
+    ]
+  },
+  "0223221":{
+    "question": "Then how about something familiar in Sci-fi setting?",
+    "options": [
+      {"text": "Mystery", "next": "book52"},
+      {"text": "Thriller", "next": "book51"}
+    ]
+  },
+  "0221":{
+    "question": "War buff?",
+    "options": [
+      {"text": "Yes, I watch the military channel exclusively", "next": "02211"},
+      {"text": "Maybe, but what I am really after is exploring the galaxy", "next": "02212"},
+      {"text": "No, I am more interested in first contact", "next": "02213"}
+    ]
+  },
+  "02211":{
+    "question": "What shall we fight?",
+    "options": [
+      {"text": "Man vs Bugs", "next": "book57"},
+      {"text": "Man vs Far Away Bugs", "next": "book58"},
+      {"text" : "Man vs Aliens", "next": "book59"},
+      {"text" : "Spritual vs Colonialism", "next": "book60"},
+      {"text" : "Humans vs Humans", "next": "book61"},
+      {"text" : "Everyone", "next": "book62"}
+    ]
+  },
+  "02213":{
+    "question": "What kind of aliens would you like?",
+    "options": [
+      {"text": "Hostile", "next": "book63"},
+      {"text": "Absent", "next": "book64"},
+      {"text": "Peaceful", "next": "book65"},
+      {"text": "Fatherly", "next": "book66"},
+      {"text": "Prodigious Breeders", "next": "book67"}
+    ]
+  },
+  "02212":{
+    "question": "A galaxy far far away??",
+    "options": [
+      {"text": "Yes, Preferrably long ago as well", "next": "book68"},
+      {"text": "No, I see what you did there.", "next": "022121"}
+    ]
+  },
+  "022121":{
+    "question": "Are you having a laugh?",
+    "options": [
+      {"text": "Yes, Comedy is in my blood", "next": "book69"},
+      {"text": "Maybe, I dont mind few chuckles between explosions", "next": "book70"},
+      {"text": "No, I do not have a sense of humour that I am aware of.", "next": "0221211"}
+    ]
+  },
+  "0221211":{
+    "question": "Kind of professional aren't we?",
+    "options": [
+      {"text": "Yes, I am a scholarly adventurer.", "next": "02212111"},
+      {"text": "No, I just like my action tense.", "next": "book71"}
+    ]
+  },
+  "02212111":{
+    "question": "Choose one?",
+    "options": [
+      {"text": "History", "next": "book74"},
+      {"text": "Engineering", "next": "book75"},
+      {"text": "Information Technology", "next": "book76"}
+    ]
+  },
+  "02212112":{
+    "question": "Shorter stories it is then. Pick one.",
+    "options": [
+      {"text": "Robots", "next": "book72"},
+      {"text": "Martians", "next": "book73"}
     ]
   }
 }
