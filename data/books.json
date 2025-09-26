@@ -5,7 +5,7 @@
     "description": "An epic high-fantasy novel and adventure featuring a quest to destroy the One Ring.",
     "cover": "assets/images/lotr.jpg",
     "secondary": {
-      "text": "Not that new? Try The Silmarillion!",
+      "text": "Not that new?",
       "next": "book3"
     }
   },
@@ -319,7 +319,11 @@
     "title": "2001: A Space Odyssey",
     "author": "Arthur C. Clarke",
     "description": "Evolution, alien monoliths, and humanity’s leap into space.",
-    "cover": "assets/images/2001.jpg"
+    "cover": "assets/images/2001.jpg",
+    "secondary": {
+      "text": "Too far, Too trippy.",
+      "next": "0222"
+    }
   },
   "book54": {
     "title": "The Martian Chronicles",
@@ -427,7 +431,11 @@
     "title": "The Vorkosigan Saga",
     "author": "Lois McMaster Bujold",
     "description": "Adventures of Miles Vorkosigan in a galaxy of politics and intrigue.",
-    "cover": "assets/images/vorkosigan.jpg"
+    "cover": "assets/images/vorkosigan.jpg",
+    "secondary": {
+      "text": "Not A whole Series",
+      "next": "02212112"
+    }
   },
   "book72": {
     "title": "I, Robot",
