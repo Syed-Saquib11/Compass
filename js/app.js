@@ -18,7 +18,7 @@ let history = [];
 async function loadQuizData() {
   try {
     console.log("Fetching quiz data...");
-    const quizResponse = await fetch("data/quizdata.json");
+    const quizResponse = await fetch("data/quizData.json");
     if (!quizResponse.ok) throw new Error("Quiz data fetch failed");
     quizData = await quizResponse.json();
     console.log("Quiz data loaded.");
@@ -91,13 +91,36 @@ function showQuestion(nodeKey, pushToHistory = true) {
 
     // Add secondary recommendation button if present
     if (book.secondary) {
-      const secondaryBtn = document.createElement("button");
-      secondaryBtn.id = "secondary-btn";
-      secondaryBtn.className = "option-button";
-      secondaryBtn.textContent = book.secondary.text;
-      secondaryBtn.onclick = () => showQuestion(book.secondary.next, false);
-      restartBtn.parentNode.insertBefore(secondaryBtn, restartBtn);
-    }
+    const secondaryBtn = document.createElement("button");
+    secondaryBtn.id = "secondary-btn";
+    secondaryBtn.className = "option-button";
+    secondaryBtn.textContent = book.secondary.text;
+    
+    // secondaryBtn.onclick = () => {
+    //   // If next key exists in quizData, it's a question; otherwise, it's a book
+    //   if (quizData[book.secondary.next]) {
+    //     showQuestion(book.secondary.next); // Go to the quiz question
+    //   } else if (bookData[book.secondary.next]) {
+    //     showQuestion(book.secondary.next); // Go to another book result
+    //   } else {
+    //     console.warn("Secondary next node not found:", book.secondary.next);
+    //   }
+
+      secondaryBtn.onclick = () => {
+    const nextKey = book.secondary.next;
+    if (quizData[nextKey]) {
+      // Switch UI view to question prompt
+      resultContainer.classList.add("hidden");
+      questionContainer.classList.remove("hidden");
+      showQuestion(nextKey); // Go to quiz question
+    } else if (bookData[nextKey]) {
+      showQuestion(nextKey); // Go to another book result
+    } else {
+      console.warn("Secondary next node not found:", nextKey);
+    }    
+    };
+    restartBtn.parentNode.insertBefore(secondaryBtn, restartBtn);
+  }
     return;
   }
 
@@ -153,4 +176,3 @@ backBtn.addEventListener("click", goBack);
 if (backBtnResult) backBtnResult.addEventListener("click", goBack);
 
 loadQuizData();
-
