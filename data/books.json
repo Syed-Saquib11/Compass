@@ -224,5 +224,240 @@
     "author": "Steven Erikson",
     "description": "One of the most complex epic fantasies ever written, with vast world-building, massive battles, and deep themes.",
     "cover": "assets/images/malazan.jpg"
+  },
+  "book38": {
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "description": "The novel that defined cyberpunk — hackers, AIs, and the matrix of cyberspace.",
+    "cover": "assets/images/neuromancer.jpg"
+  },
+  "book39": {
+    "title": "The Diamond Age",
+    "author": "Neal Stephenson",
+    "description": "A future shaped by nanotech, where a young girl finds a powerful interactive book.",
+    "cover": "assets/images/diamond_age.jpg"
+  },
+  "book40": {
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "description": "A pizza-delivering samurai hacker battles virtual viruses in a chaotic near-future.",
+    "cover": "assets/images/snow_crash.jpg"
+  },
+  "book41": {
+    "title": "Cryptonomicon",
+    "author": "Neal Stephenson",
+    "description": "A sprawling tale of codebreakers, hackers, and cryptography across generations.",
+    "cover": "assets/images/cryptonomicon.jpg"
+  },
+  "book42": {
+    "title": "Journey to the Center of the Earth",
+    "author": "Jules Verne",
+    "description": "An expedition deep into Earth uncovers prehistoric wonders and lost worlds.",
+    "cover": "assets/images/journey_center.jpg"
+  },
+  "book43": {
+    "title": "20,000 Leagues Under the Sea",
+    "author": "Jules Verne",
+    "description": "Captain Nemo and his submarine, the Nautilus, explore the ocean’s mysteries.",
+    "cover": "assets/images/20000_leagues.jpg"
+  },
+  "book44": {
+    "title": "Do Androids Dream of Electric Sheep?",
+    "author": "Philip K. Dick",
+    "description": "Blade Runner’s source: a bounty hunter questions humanity in a world of androids.",
+    "cover": "assets/images/androids.jpg"
+  },
+  "book45": {
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "description": "Explores gender, politics, and survival on a frozen alien world.",
+    "cover": "assets/images/left_hand.jpg"
+  },
+  "book46": {
+    "title": "The Dispossessed",
+    "author": "Ursula K. Le Guin",
+    "description": "A physicist bridges two worlds divided by anarchism and capitalism.",
+    "cover": "assets/images/dispossessed.jpg"
+  },
+  "book47": {
+    "title": "A Canticle for Leibowitz",
+    "author": "Walter M. Miller Jr.",
+    "description": "Monks preserve knowledge after a nuclear apocalypse.",
+    "cover": "assets/images/canticle.jpg"
+  },
+  "book48": {
+    "title": "Stranger in a Strange Land",
+    "author": "Robert A. Heinlein",
+    "description": "A man raised by Martians challenges human culture and religion.",
+    "cover": "assets/images/stranger_land.jpg"
+  },
+  "book49": {
+    "title": "The Time Machine",
+    "author": "H.G. Wells",
+    "description": "A Victorian scientist journeys into the far future and discovers humanity’s fate.",
+    "cover": "assets/images/time_machine.jpg"
+  },
+  "book50": {
+    "title": "Doomsday Book",
+    "author": "Connie Willis",
+    "description": "A time-traveling historian faces the Black Death.",
+    "cover": "assets/images/doomsday.jpg"
+  },
+  "book51": {
+    "title": "Lucifer’s Hammer",
+    "author": "Larry Niven & Jerry Pournelle",
+    "description": "A comet strike brings about global apocalypse.",
+    "cover": "assets/images/lucifer_hammer.jpg"
+  },
+  "book52": {
+    "title": "The Caves of Steel",
+    "author": "Isaac Asimov",
+    "description": "A detective and his robot partner solve a murder in a futuristic city.",
+    "cover": "assets/images/caves_steel.jpg"
+  },
+  "book53": {
+    "title": "2001: A Space Odyssey",
+    "author": "Arthur C. Clarke",
+    "description": "Evolution, alien monoliths, and humanity’s leap into space.",
+    "cover": "assets/images/2001.jpg"
+  },
+  "book54": {
+    "title": "The Martian Chronicles",
+    "author": "Ray Bradbury",
+    "description": "A lyrical tale of humanity’s colonization of Mars.",
+    "cover": "assets/images/martian_chronicles.jpg"
+  },
+  "book55": {
+    "title": "The Mars Trilogy",
+    "author": "Kim Stanley Robinson",
+    "description": "Hard sci-fi about terraforming Mars and reshaping humanity’s future.",
+    "cover": "assets/images/mars_trilogy.jpg"
+  },
+  "book56": {
+    "title": "The Space Trilogy",
+    "author": "C.S. Lewis",
+    "description": "Christian allegory and interplanetary adventure.",
+    "cover": "assets/images/space_trilogy.jpg"
+  },
+  "book57": {
+    "title": "Starship Troopers",
+    "author": "Robert A. Heinlein",
+    "description": "Military sci-fi about soldiers, bugs, and civic duty.",
+    "cover": "assets/images/starship.jpg"
+  },
+  "book58": {
+    "title": "Ender’s Game",
+    "author": "Orson Scott Card",
+    "description": "A gifted boy is trained to command humanity’s fleet against aliens.",
+    "cover": "assets/images/enders_game.jpg"
+  },
+  "book59": {
+    "title": "The Forever War",
+    "author": "Joe Haldeman",
+    "description": "Soldiers fight a war across centuries of time dilation.",
+    "cover": "assets/images/forever_war.jpg"
+  },
+  "book60": {
+    "title": "The Dune Chronicles",
+    "author": "Frank Herbert",
+    "description": "Epic desert politics, ecology, and messianic destiny.",
+    "cover": "assets/images/dune.jpg"
+  },
+  "book61": {
+    "title": "The Moon is a Harsh Mistress",
+    "author": "Robert A. Heinlein",
+    "description": "A lunar colony fights for independence with the help of a sentient AI.",
+    "cover": "assets/images/moon_harsh.jpg"
+  },
+  "book62": {
+    "title": "Old Man’s War",
+    "author": "John Scalzi",
+    "description": "Elderly humans join an interstellar army in new bodies.",
+    "cover": "assets/images/old_mans_war.jpg"
+  },
+  "book63": {
+    "title": "The War of the Worlds",
+    "author": "H.G. Wells",
+    "description": "The original alien invasion classic — Martians versus mankind.",
+    "cover": "assets/images/war_worlds.jpg"
+  },
+  "book64": {
+    "title": "Rendezvous with Rama",
+    "author": "Arthur C. Clarke",
+    "description": "A mysterious alien spacecraft enters our solar system.",
+    "cover": "assets/images/rama.jpg"
+  },
+  "book65": {
+    "title": "Childhood’s End",
+    "author": "Arthur C. Clarke",
+    "description": "Benevolent aliens guide humanity toward a cosmic destiny.",
+    "cover": "assets/images/childhoods_end.jpg"
+  },
+  "book66": {
+    "title": "Contact",
+    "author": "Carl Sagan",
+    "description": "First contact with extraterrestrials, grounded in science and wonder.",
+    "cover": "assets/images/contact.jpg"
+  },
+  "book67": {
+    "title": "The Mote in God’s Eye",
+    "author": "Larry Niven & Jerry Pournelle",
+    "description": "First contact with an alien species both fascinating and dangerous.",
+    "cover": "assets/images/mote_eye.jpg"
+  },
+  "book68": {
+    "title": "The Thrawn Trilogy",
+    "author": "Timothy Zahn",
+    "description": "Legendary Star Wars novels featuring Grand Admiral Thrawn.",
+    "cover": "assets/images/thrawn.jpg"
+  },
+  "book69": {
+    "title": "The Hitchhiker’s Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "description": "Absurd, hilarious space travel with a towel in hand.",
+    "cover": "assets/images/hitchhiker.jpg"
+  },
+  "book70": {
+    "title": "The Culture Series",
+    "author": "Iain M. Banks",
+    "description": "A post-scarcity galactic society governed by benevolent AIs.",
+    "cover": "assets/images/culture.jpg"
+  },
+  "book71": {
+    "title": "The Vorkosigan Saga",
+    "author": "Lois McMaster Bujold",
+    "description": "Adventures of Miles Vorkosigan in a galaxy of politics and intrigue.",
+    "cover": "assets/images/vorkosigan.jpg"
+  },
+  "book72": {
+    "title": "I, Robot",
+    "author": "Isaac Asimov",
+    "description": "Short stories exploring the ethics and paradoxes of robotics.",
+    "cover": "assets/images/i_robot.jpg"
+  },
+  "book73": {
+    "title": "The Illustrated Man",
+    "author": "Ray Bradbury",
+    "description": "Stories tied together by a tattooed man whose skin tells tales.",
+    "cover": "assets/images/illustrated_man.jpg"
+  },
+  "book74": {
+    "title": "The Foundation Trilogy",
+    "author": "Isaac Asimov",
+    "description": "A galactic empire collapses as scientists plan for the future.",
+    "cover": "assets/images/foundation.jpg"
+  },
+  "book75": {
+    "title": "Ringworld",
+    "author": "Larry Niven",
+    "description": "Adventurers explore a colossal artificial ring encircling a star.",
+    "cover": "assets/images/ringworld.jpg"
+  },
+  "book76": {
+    "title": "A Fire Upon the Deep",
+    "author": "Vernor Vinge",
+    "description": "Galactic-scale war and discovery of a deadly superintelligence.",
+    "cover": "assets/images/fire_deep.jpg"
   }
 }
+
