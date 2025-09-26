@@ -349,13 +349,12 @@
       {"text": "Martians", "next": "book73"}
     ]
   },
-    "q2": {
+  "q2": {
     "question": "How about Mystery or Thriller?",
     "options": [
-      {"text": "Mystery", "next": ""},
-      {"text": "Thriller", "next": ""},
+      {"text": "Mystery", "next": "book77"},
+      {"text": "Thriller", "next": "book78"},
+      {"text": "Neither, Give me Something else", "next": "q3"}
     ]
+  }
 }
-}
-
-
