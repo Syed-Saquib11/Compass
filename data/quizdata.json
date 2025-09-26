@@ -352,11 +352,10 @@
     "q2": {
     "question": "How about Mystery or Thriller?",
     "options": [
-      {"text": "Mystery", "next": "book77"},
-      {"text": "Thriller", "next": "book78"},
-      {"text": "Neither, Give me Something else", "next": "q3"}
+      {"text": "Mystery", "next": ""},
+      {"text": "Thriller", "next": ""},
     ]
-  }
 }
 }
+
 
