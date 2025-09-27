@@ -466,6 +466,150 @@
     "author": "Vernor Vinge",
     "description": "Galactic-scale war and discovery of a deadly superintelligence.",
     "cover": "assets/images/fire_deep.jpg"
+  },
+  "book77": {
+    "title": "Anathem",
+    "author": "Neal Stephenson",
+    "description": "A dense, mind-bending tale of philosophy, science, and parallel worlds.",
+    "cover": "assets/images/anathem.jpg"
+  },
+  "book78": {
+    "title": "The Hyperion Cantos",
+    "author": "Dan Simmons",
+    "description": "A richly layered space epic full of mystery, poetry, and pilgrimage.",
+    "cover": "assets/images/hyperion.jpg"
+  },
+  "book79": {
+    "title": "The Book of the New Sun",
+    "author": "Gene Wolfe",
+    "description": "A challenging, profound journey through a dying Earth’s strange future.",
+    "cover": "assets/images/book_new_sun.jpg"
+  },
+  "book80": {
+    "title": "The Eyre Affair",
+    "author": "Jasper Fforde",
+    "description": "A witty, bookish romp where literature and reality collide.",
+    "cover": "assets/images/eyre_affair.jpg"
+  },
+  "book81": {
+    "title": "Perdido Street Station",
+    "author": "China Miéville",
+    "description": "A gritty, imaginative dive into steampunk weirdness and urban fantasy.",
+    "cover": "assets/images/perdido.jpg"
+  },
+  "book82": {
+    "title": "Watchmen",
+    "author": "Alan Moore & Dave Gibbons",
+    "description": "A deconstruction of superheroes in a morally gray, Cold War world.",
+    "cover": "assets/images/watchmen.jpg"
+  },
+  "book83": {
+    "title": "The Sandman Series",
+    "author": "Neil Gaiman",
+    "description": "A darkly beautiful blend of myth, dreams, and storytelling.",
+    "cover": "assets/images/sandman.jpg"
+  },
+  "book84": {
+    "title": "Sunshine",
+    "author": "Robin McKinley",
+    "description": "A modern fairy-tale twist on vampires, magic, and resilience.",
+    "cover": "assets/images/sunshine.jpg"
+  },
+  "book85": {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "description": "The timeless gothic story of science, ambition, and unintended consequences.",
+    "cover": "assets/images/frankenstein.jpg"
+  },
+  "book86": {
+    "title": "I Am Legend",
+    "author": "Richard Matheson",
+    "description": "A chilling survival tale of the last man facing a world of monsters.",
+    "cover": "assets/images/iamlegend.jpg"
+  },
+  "book87": {
+    "title": "World War Z",
+    "author": "Max Brooks",
+    "description": "A global oral history of humanity’s fight against a zombie apocalypse.",
+    "cover": "assets/images/worldwarz.jpg"
+  },
+  "book88": {
+    "title": "Flowers for Algernon",
+    "author": "Daniel Keyes",
+    "description": "A heartbreaking story of intelligence, humanity, and loss.",
+    "cover": "assets/images/algernon.jpg"
+  },
+  "book89": {
+    "title": "The Time Traveler's Wife",
+    "author": "Audrey Niffenegger",
+    "description": "A love story entwined with time, fate, and tragedy.",
+    "cover": "assets/images/time_travelers_wife.jpg"
+  },
+  "book90": {
+    "title": "The Outlander Series",
+    "author": "Diana Gabaldon",
+    "description": "Romance and adventure where time travel meets Scottish history.",
+    "cover": "assets/images/outlander.jpg"
+  },
+  "book91": {
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "description": "A satirical, time-warped reflection on war, fate, and absurdity.",
+    "cover": "assets/images/slaughterhouse5.jpg"
+  },
+  "book92": {
+    "title": "Cat's Cradle",
+    "author": "Kurt Vonnegut",
+    "description": "A darkly comic take on science, religion, and the end of the world.",
+    "cover": "assets/images/cats_cardle.jpg"
+  },
+  "book93": {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "description": "A sharp allegory of revolution, corruption, and authoritarianism.",
+    "cover": "assets/images/animal_farm.jpg"
+  },
+  "book94": {
+    "title": "Nineteen Eighty-Four",
+    "author": "George Orwell",
+    "description": "The defining dystopian vision of surveillance and totalitarian control.",
+    "cover": "assets/images/1984.jpg"
+  },
+  "book95": {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "description": "A chilling glimpse into a theocratic dystopia of oppression.",
+    "cover": "assets/images/handmaid.jpg"
+  },
+  "book96": {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "description": "A prophetic vision of pleasure, control, and a manufactured society.",
+    "cover": "assets/images/brave_new_world.jpg"
+  },
+  "book97": {
+    "title": "A Clockwork Orange",
+    "author": "Anthony Burgess",
+    "description": "A disturbing exploration of free will, violence, and morality.",
+    "cover": "assets/images/clockwork_orange.jpg"
+  },
+  "book98": {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "description": "A dystopia where books burn, and independent thought is under fire.",
+    "cover": "assets/images/fahrenheit451.jpg"
+  },
+  "book99": {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "description": "A bleak yet tender tale of survival and love in a ruined world.",
+    "cover": "assets/images/road.jpg"
+  },
+  "book100": {
+    "title": "The Stand",
+    "author": "Stephen King",
+    "description": "An apocalyptic showdown between good and evil after a deadly plague.",
+    "cover": "assets/images/stand.jpg"
   }
 }
 
