@@ -4,7 +4,7 @@
     "options": [
       {"text": "Fantasy", "next": "01"},
       {"text": "Sci-Fi", "next": "02"},
-      {"text": "Neither, Give me Something else", "next": "q2"}
+      {"text": "Neither, Give me Something else", "next": "03"}
     ]
   },
   "01": {
@@ -355,6 +355,143 @@
       {"text": "Mystery", "next": "book77"},
       {"text": "Thriller", "next": "book78"},
       {"text": "Neither, Give me Something else", "next": "q3"}
+    ]
+  },
+  "03": {
+    "question": "So Sci-Fi Fantasy is not your thing?",
+    "options": [
+      {"text": "Can't i have both?", "next": "031"},
+      {"text": "No, I only read books with picture.", "next": "032"},
+      {"text": "What about Horror?", "next": "033"},
+      {"text": "I'd rather not be seen in that area of bookstore.", "next": "034"}
+    ]
+  },
+  "031": {
+    "question": "You can have it all. Into the future or past?",
+    "options": [
+      {"text": "Future", "next": "0311"},
+      {"text": "Past", "next": "0312"}
+    ]
+  },
+  "0311": {
+    "question": "Math Geek?",
+    "options": [
+      {"text": "Yes", "next": "book77"},
+      {"text": "No", "next": "03112"}
+    ]
+  },
+  "03112": {
+    "question": "What sounds more interesting: A dying sun or an impaling demon?",
+    "options": [
+      {"text": "Hard", "next": "book78"},
+      {"text": "Soft", "next": "book79"}
+    ]
+  },
+  "0312": {
+    "question": "Like Monsters?",
+    "options": [
+      {"text": "Yes", "next": "book81"},
+      {"text": "No", "next": "book80"}
+    ]
+  },
+  "032": {
+    "question": "PoMo Heroes or tortured spectre?",
+    "options": [
+      {"text": "Hero", "next": "book82"},
+      {"text": "Master of Dreams", "next": "book83"}
+    ]
+  },
+  "033": {
+    "question": "Not much to choose from. Looking for Vampires?",
+    "options": [
+      {"text": "Yes", "next": "book84"},
+      {"text": "No, more like zombies", "next": "0331"}
+    ]
+  },
+  "0331": {
+    "question": "Zombie war or one man against the horde?",
+    "options": [
+      {"text": "I'm going it alone", "next": "book86"},
+      {"text": "With a little help from my friends.", "next": "book87"},
+      {"text": "No, on second thought, why not go with a classic.", "next": "book85"}
+    ]
+  },
+  "034": {
+    "question": "We wont tell. Prefer a drama?",
+    "options": [
+      {"text": "Yes, I love me some tear jerker.", "next": "0341"},
+      {"text": "No, I just watched The Notebook last night.", "next": "0342"}
+    ]
+  },
+  "0341": {
+    "question": "Romance or Overcoming the odds?",
+    "options": [
+      {"text": "I root for the underdog", "next": "book88"},
+      {"text": "Romance", "next": "03411"}
+    ]
+  },
+  "03411": {
+    "question": "If you had a time machine, how would you use it?",
+    "options": [
+      {"text": "To find love, even if it hurts", "next": "book89"},
+      {"text": "To chase adventure, and maybe a Highlander.", "next": "book90"}
+    ]
+  },
+  "0342": {
+    "question": "Postmodern mindbender?",
+    "options": [
+      {"text": "Yes", "next": "03421"},
+      {"text": "No", "next": "03422"}
+    ]
+  },
+  "03421": {
+    "question": "Want some time travel too?",
+    "options": [
+      {"text": "Yes", "next": "book91"},
+      {"text": "No", "next": "book92"}
+    ]
+  },
+  "03422": {
+    "question": "Interested in Dystopian Fiction?",
+    "options": [
+      {"text": "Yes, I am sucker for worst case scenarios", "next": "034221"},
+      {"text": "No, The world is bleak enough already", "next": "book93"}
+    ]
+  },
+  "034221": {
+    "question": "Totalitarian or world gone wrong?",
+    "options": [
+      {"text": "Dictators", "next": "0342211"},
+      {"text": "Madness", "next": "0342212"}
+    ]
+  },
+  "0342211": {
+    "question": "What type?",
+    "options": [
+      {"text": "Religous Totalitarian", "next": "book95"},
+      {"text": "Warlord", "next": "book94"}
+    ]
+  },
+  "0342212": {
+    "question": "Do manufactured humans interest you?",
+    "options": [
+      {"text": "Yes", "next": "book96"},
+      {"text": "No", "next": "03422121"}
+    ]
+  },
+  "03422121": {
+    "question": "Which question frightens you?",
+    "options": [
+      {"text": "Who needs free will?", "next": "book97"},
+      {"text": "Who need books?", "next": "book98"},
+      {"text": "No, I was thinking more post apocalyptic", "next": "03422122"}
+    ]
+  },
+  "03422122": {
+    "question": "Like the world on fire?",
+    "options": [
+      {"text": "Yes, Some men just want to see world burn.", "next": "book99"},
+      {"text": "No, But worldwide pandemic would be cool.", "next": "book100"}
     ]
   }
 }
