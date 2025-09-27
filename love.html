@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookCompass - Discover Your Next Favorite Book</title>
+    <meta
+      name="description"
+      content="Take a fun quiz and get personalized book recommendations you'll fall in love with. Find your perfect next read with BookCompass."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <style>
+      /* BookCompass Design System */
+      :root {
+        /* Brand Colors */
+        --background: hsl(50, 33%, 97%);
+        --foreground: hsl(0, 0%, 13%);
+        --primary: hsl(248, 39%, 58%);
+        --primary-foreground: hsl(50, 33%, 97%);
+        --primary-glow: hsl(248, 39%, 68%);
+        --secondary: hsl(51, 100%, 50%);
+        --secondary-foreground: hsl(0, 0%, 13%);
+        --muted: hsl(45, 25%, 92%);
+        --muted-foreground: hsl(0, 0%, 40%);
+        --accent: hsl(51, 100%, 50%);
+        --accent-foreground: hsl(0, 0%, 13%);
+        --destructive: hsl(354, 70%, 54%);
+        --border: hsl(45, 25%, 85%);
+
+        /* Gradients */
+        --gradient-primary: linear-gradient(
+          135deg,
+          hsl(248, 39%, 58%),
+          hsl(248, 39%, 68%)
+        );
+        --gradient-secondary: linear-gradient(
+          135deg,
+          hsl(51, 100%, 50%),
+          hsl(45, 100%, 60%)
+        );
+        --gradient-hero: linear-gradient(
+          135deg,
+          hsl(50, 33%, 97%),
+          hsl(45, 25%, 92%)
+        );
+        --gradient-footer: linear-gradient(
+          135deg,
+          hsl(248, 39%, 20%),
+          hsl(248, 39%, 15%)
+        );
+
+        /* Shadows */
+        --shadow-warm: 0 10px 30px -10px hsl(248 39% 58% / 0.15);
+        --shadow-glow: 0 0 20px hsl(51 100% 50% / 0.3);
+        --shadow-elegant: 0 20px 40px -10px hsl(248 39% 58% / 0.2);
+        --shadow-footer: 0 -10px 30px -10px hsl(248 39% 58% / 0.1);
+
+        /* Transitions */
+        --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      /* Reset and Base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--background);
+        color: var(--foreground);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      /* Container */
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      /* Header Styles */
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        width: 100%;
+        background-color: rgba(250, 249, 246, 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(70, 62, 47, 0.2);
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .logo-icon {
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: rgba(106, 90, 205, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .logo-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--foreground);
+      }
+
+      .logo-accent {
+        color: var(--primary);
+      }
+
+      .nav {
+        display: none;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .nav {
+          display: flex;
+        }
+      }
+
+      .nav-link {
+        position: relative;
+        color: rgba(34, 34, 34, 0.8);
+        text-decoration: none;
+        transition: var(--transition-smooth);
+      }
+
+      .nav-link:hover {
+        color: var(--foreground);
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--secondary);
+        transition: var(--transition-smooth);
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Hero Section */
+      .hero {
+        position: relative;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 1.5rem;
+        background: none;
+      }
+
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        /* background: url("hero-books.jpg") no-repeat center center/cover; */
+        /* filter: contrast(0.8); */
+        filter: blur(74%), contrast();
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+      }
+
+      .hero-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .sparkle-pulse {
+        animation: sparkle 2s infinite;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--foreground);
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+      }
+
+      .hero-title-accent {
+        display: block;
+        color: var(--primary);
+      }
+
+      @media (min-width: 768px) {
+        .hero-title {
+          font-size: 3.75rem;
+        }
+      }
+
+      .hero-subtitle {
+        font-size: 1.25rem;
+        color: var(--muted-foreground);
+        margin-bottom: 3rem;
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+      }
+
+      @media (min-width: 768px) {
+        .hero-subtitle {
+          font-size: 1.5rem;
+        }
+      }
+
+      /* Buttons */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--primary);
+        color: var(--primary-foreground);
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 1.125rem;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: var(--transition-smooth);
+        box-shadow: var(--shadow-warm);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--secondary);
+        color: var(--secondary-foreground);
+        box-shadow: var(--shadow-glow);
+        transform: translateY(-2px) scale(1.05);
+      }
+
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--secondary);
+        color: var(--secondary-foreground);
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: var(--transition-smooth);
+        box-shadow: var(--shadow-warm);
+      }
+
+      .btn-secondary:hover {
+        background-color: rgba(255, 215, 0, 0.9);
+        box-shadow: var(--shadow-glow);
+        transform: translateY(-1px);
+      }
+
+      /* About Section */
+      .about {
+        padding: 5rem 1.5rem;
+        background-color: rgba(176, 160, 124, 0.1);
+      }
+
+      .about-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .about-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--foreground);
+        margin-bottom: 1.5rem;
+      }
+
+      .about-divider {
+        width: 6rem;
+        height: 4px;
+        background-color: var(--secondary);
+        margin: 0 auto 2rem;
+        border-radius: 2px;
+      }
+
+      .about-text {
+        font-size: 1.125rem;
+        color: var(--muted-foreground);
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 3rem;
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .features-grid {
+        display: grid;
+        gap: 2rem;
+        margin-top: 4rem;
+      }
+
+      @media (min-width: 768px) {
+        .features-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .feature-card {
+        text-align: center;
+        transition: var(--transition-smooth);
+      }
+
+      .feature-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-elegant);
+      }
+
+      .feature-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        transition: var(--transition-smooth);
+      }
+
+      .feature-icon.primary {
+        background-color: rgba(106, 90, 205, 0.1);
+      }
+
+      .feature-icon.secondary {
+        background-color: rgba(255, 215, 0, 0.1);
+      }
+
+      .feature-card:hover .feature-icon.primary {
+        background-color: rgba(106, 90, 205, 0.2);
+      }
+
+      .feature-card:hover .feature-icon.secondary {
+        background-color: rgba(255, 215, 0, 0.2);
+      }
+
+      .feature-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--foreground);
+        margin-bottom: 0.5rem;
+      }
+
+      .feature-description {
+        color: var(--muted-foreground);
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--gradient-footer);
+        color: var(--primary-foreground);
+        box-shadow: var(--shadow-footer);
+      }
+
+      .footer-main {
+        padding: 4rem 1.5rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        gap: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .footer-grid {
+          grid-template-columns: 2fr 1fr 1fr;
+          gap: 3rem;
+        }
+      }
+
+      .footer-brand {
+        margin-bottom: 1.5rem;
+      }
+
+      .footer-brand-icon {
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.75rem;
+      }
+
+      .footer-brand-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+        vertical-align: middle;
+      }
+
+      .footer-description {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        max-width: 24rem;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .social-link {
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        text-decoration: none;
+        transition: var(--transition-smooth);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+      }
+
+      .footer-section h4 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: white;
+      }
+
+      .footer-nav {
+        list-style: none;
+      }
+
+      .footer-nav li {
+        margin-bottom: 0.75rem;
+      }
+
+      .footer-nav a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: var(--transition-smooth);
+      }
+
+      .footer-nav a:hover {
+        color: white;
+        transform: translateX(4px);
+      }
+
+      .contact-info {
+        list-style: none;
+      }
+
+      .contact-info li {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .contact-info .icon {
+        color: var(--secondary);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+      }
+
+      .footer-bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      @media (min-width: 768px) {
+        .footer-bottom-content {
+          flex-direction: row;
+          justify-content: space-between;
+          text-align: left;
+        }
+      }
+
+      .copyright {
+        color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+
+      .heart-beat {
+        animation: heartBeat 1.5s ease-in-out infinite;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @media (min-width: 768px) {
+        .footer-links {
+          justify-content: flex-end;
+        }
+      }
+
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-size: 0.875rem;
+        transition: var(--transition-smooth);
+      }
+
+      .footer-links a:hover {
+        color: white;
+      }
+
+      /* Modal */
+      .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .modal.active {
+        display: flex;
+      }
+
+      .modal-content {
+        background-color: var(--background);
+        border-radius: 1rem;
+        padding: 2rem;
+        max-width: 28rem;
+        width: 100%;
+        box-shadow: var(--shadow-elegant);
+      }
+
+      .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+      }
+
+      .modal-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--foreground);
+      }
+
+      .modal-close {
+        padding: 0.5rem;
+        border-radius: 50%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: var(--muted-foreground);
+        transition: var(--transition-smooth);
+      }
+
+      .modal-close:hover {
+        background-color: var(--muted);
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--foreground);
+        margin-bottom: 0.5rem;
+      }
+
+      .form-input,
+      .form-textarea {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--border);
+        background-color: var(--background);
+        color: var(--foreground);
+        font-family: inherit;
+        transition: var(--transition-smooth);
+      }
+
+      .form-input:focus,
+      .form-textarea:focus {
+        outline: none;
+        border-color: transparent;
+        box-shadow: 0 0 0 2px var(--primary);
+      }
+
+      .form-textarea {
+        resize: none;
+        min-height: 6rem;
+      }
+
+      .form-submit {
+        width: 100%;
+        background-color: var(--primary);
+        color: var(--primary-foreground);
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: var(--transition-smooth);
+      }
+
+      .form-submit:hover {
+        background-color: rgba(106, 90, 205, 0.9);
+        box-shadow: var(--shadow-warm);
+        transform: translateY(-1px);
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes sparkle {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.5;
+          transform: scale(1.1);
+        }
+      }
+
+      @keyframes heartBeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+
+      .fade-in-delay {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.8s ease-out 0.2s forwards;
+      }
+
+      .hover-spin:hover {
+        animation: spin 1s linear infinite;
+      }
+
+      /* Icon Styles */
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      .icon-lg {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      .icon-primary {
+        color: var(--primary);
+      }
+
+      .icon-secondary {
+        color: var(--secondary);
+      }
+
+      .icon-destructive {
+        color: var(--destructive);
+      }
+
+      /* Utility Classes */
+      .text-center {
+        text-align: center;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <!-- Logo -->
+          <div class="logo">
+            <div class="logo-icon">
+              <i data-lucide="book-open" class="icon icon-primary"></i>
+            </div>
+            <h1 class="logo-text">
+              Book<span class="logo-accent">Compass</span>
+            </h1>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="fade-in">
+              <div class="hero-icons">
+                <i data-lucide="book-open" class="icon-lg icon-primary"></i>
+                <i
+                  data-lucide="sparkles"
+                  class="icon sparkle-pulse icon-secondary"
+                ></i>
+              </div>
+
+              <h1 class="hero-title">
+                📖 Discover Your Next
+                <span class="hero-title-accent">Favorite Book!</span>
+              </h1>
+            </div>
+
+            <div class="fade-in-delay">
+              <p class="hero-subtitle">
+                Take a fun, 2-minute quiz and get personalized book
+                recommendations you'll fall in love with.
+              </p>
+
+              <button class="btn-primary" onclick="startQuiz()">
+                Start the Quiz
+                <i data-lucide="sparkles" class="hover-spin"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-header fade-in">
+            <h2 class="about-title">Find Books That Feel Made For You</h2>
+            <div class="about-divider"></div>
+          </div>
+
+          <div class="fade-in-delay">
+            <p class="about-text">
+              At BookCompass, we believe that every reader deserves the perfect
+              story. Our smart quiz understands your unique taste and recommends
+              books that feel written just for you — whether you're a fan of
+              epic adventures, heart-warming romances, or thought-provoking
+              non-fiction.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon primary">
+                  <i data-lucide="star" class="icon-lg icon-primary"></i>
+                </div>
+                <h3 class="feature-title">Personalized</h3>
+                <p class="feature-description">
+                  Tailored recommendations based on your unique reading
+                  preferences
+                </p>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon secondary">
+                  <i data-lucide="heart" class="icon-lg icon-secondary"></i>
+                </div>
+                <h3 class="feature-title">Curated with Love</h3>
+                <p class="feature-description">
+                  Every book suggestion is carefully selected by fellow book
+                  enthusiasts
+                </p>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon primary">
+                  <i data-lucide="users" class="icon-lg icon-primary"></i>
+                </div>
+                <h3 class="feature-title">Community Driven</h3>
+                <p class="feature-description">
+                  Join thousands of readers discovering their next favorite
+                  stories
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+      <!-- Main Footer Content -->
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <!-- Company Info -->
+            <div>
+              <div class="footer-brand">
+                <div class="footer-brand-icon">
+                  <i data-lucide="book-open" class="icon"></i>
+                </div>
+                <span class="footer-brand-text">
+                  Book<span style="color: var(--secondary)">Compass</span>
+                </span>
+              </div>
+              <p class="footer-description">
+                Helping book lovers discover their next favorite story through
+                personalized recommendations. Join our community of passionate
+                readers and never run out of amazing books to read.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <i data-lucide="facebook" class="icon"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i data-lucide="twitter" class="icon"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i data-lucide="instagram" class="icon"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i data-lucide="github" class="icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul class="footer-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#quiz">Take Quiz</a></li>
+                <li><a href="#recommendations">Book Recommendations</a></li>
+                <li><a href="#community">Community</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+              <h4>Get in Touch</h4>
+              <ul class="contact-info">
+                <li>
+                  <i data-lucide="mail" class="icon"></i>
+                  <span>hello@bookcompass.com</span>
+                </li>
+                <li>
+                  <i data-lucide="phone" class="icon"></i>
+                  <span>+1 (555) 123-4567</span>
+                </li>
+                <li>
+                  <i data-lucide="map-pin" class="icon"></i>
+                  <span>San Francisco, CA</span>
+                </li>
+              </ul>
+
+              <!-- Contact Button -->
+              <button class="btn-secondary" onclick="openContactModal()">
+                <i data-lucide="send" class="icon"></i>
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <p class="copyright">
+              © 2025 BookCompass — Made with
+              <i
+                data-lucide="heart"
+                class="icon heart-beat"
+                style="color: var(--destructive); margin: 0 0.25rem"
+              ></i>
+              for book lovers everywhere.
+            </p>
+            <div class="footer-links">
+              <a href="#privacy">Privacy Policy</a>
+              <a href="#terms">Terms of Service</a>
+              <a href="#cookies">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Get in Touch</h3>
+          <button class="modal-close" onclick="closeContactModal()">×</button>
+        </div>
+
+        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-textarea"
+              placeholder="Tell us how we can help you..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Initialize Lucide Icons
+      lucide.createIcons();
+
+      // Contact Modal Functions
+      function openContactModal() {
+        document.getElementById("contactModal").classList.add("active");
+      }
+
+      function closeContactModal() {
+        document.getElementById("contactModal").classList.remove("active");
+        document.getElementById("contactForm").reset();
+      }
+
+      // Handle Contact Form Submission
+      function handleContactSubmit(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const contactData = {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        };
+
+        console.log("Contact form submitted:", contactData);
+
+        // Here you would typically send the form data to your backend
+        alert("Thank you for your message! We'll get back to you soon.");
+
+        closeContactModal();
+      }
+
+      // Start Quiz Function
+      function startQuiz() {
+        alert("Quiz feature coming soon! 📚✨");
+      }
+
+      // Close modal when clicking outside
+      document
+        .getElementById("contactModal")
+        .addEventListener("click", function (event) {
+          if (event.target === this) {
+            closeContactModal();
+          }
+        });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Add scroll animations
+      function handleScrollAnimations() {
+        const elements = document.querySelectorAll(".fade-in, .fade-in-delay");
+
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      }
+
+      // Initialize scroll animations
+      window.addEventListener("scroll", handleScrollAnimations);
+      window.addEventListener("load", handleScrollAnimations);
+    </script>
+  </body>
+</html>
