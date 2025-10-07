@@ -72,7 +72,7 @@
 }
 
 .option-button:hover {
-  background: var(--secondary, #ffd700);
+  background: #8874d6;
   color: var(--secondary-foreground, #221c17);
   border-color: var(--secondary, #ffd700);
   box-shadow: 0 4px 16px -6px rgba(255, 215, 0, 0.3);
