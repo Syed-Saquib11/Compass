@@ -177,3 +177,10 @@ if (backBtnResult) backBtnResult.addEventListener("click", goBack);
 
 loadQuizData();
 
+function openContactModal() {
+  document.getElementById("contactModal").classList.add("active");
+}
+
+function closeContactModal() {
+  document.getElementById("contactModal").classList.remove("active");
+}
