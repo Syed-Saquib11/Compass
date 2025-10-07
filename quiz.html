@@ -1,42 +1,187 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Compass - Your Fantasy Book Quiz</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - BookCompass</title>
+  <meta name="description" content="Take our quiz to find your perfect sci-fi or fantasy book." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Link to external CSS (same as landing page) -->
+  <link rel="stylesheet" href="css/styles2.css" />
+  <!-- Quiz-specific CSS -->
+  <link rel="stylesheet" href="css/quiz.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Compass</h1>
-      <p>Your guide to the perfect fantasy book</p>
-    </header>
-
-    <main id="quiz-container">
-      <div id="question-container" class="hidden">
-        <div id="question"></div>
-        <div id="options"></div>
-        <button id="back-btn" class="back-button hidden">Back</button> 
+  <!-- Header (same as index.html) -->
+  <header class="header">
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <i data-lucide="book-open" class="icon icon-primary"></i>
+          </div>
+          <h1 class="logo-text">
+            Book<span class="logo-accent">Compass</span>
+          </h1>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="quiz.html" class="nav-link">Quiz</a>
+          <a href="#" class="nav-link">Random</a>
+        </nav>
       </div>
-      <div id="result-container" class="hidden">
-        <h2>Book Recommendation</h2>
-        <div id="book-title"></div>
-        <div id="book-description"></div>
+    </div>
+  </header>
 
-      <div class="button-group">
-  <button id="back-btn-result" class="back-button">Back</button>
-  <button id="restart-btn">Restart Quiz</button>
+  <!-- Main Quiz Content -->
+  <main class="quiz-main">
+    <div class="quiz-card">
+      <!-- <header class="quiz-header">
+        <h1 class="quiz-title">Compass</h1>
+        <p class="quiz-subtitle">Your guide to the perfect fantasy book</p>
+      </header> -->
+
+      <div id="quiz-container">
+        <!-- Question Container -->
+        <div id="question-container" class="hidden">
+          <div id="question" class="quiz-question"></div>
+          <div id="options" class="quiz-options"></div>
+          <button id="back-btn" class="back-button hidden">
+            <i data-lucide="arrow-left" class="icon"></i>
+            Back
+          </button>
+        </div>
+
+        <!-- Result Container -->
+        <div id="result-container" class="hidden">
+          <h2 class="result-title">Book Recommendation</h2>
+          <img id="book-cover" class="book-cover" src="" alt="Book Cover" />
+          <div id="book-title" class="book-title"></div>
+          <div id="book-description" class="book-description"></div>
+
+          <div class="button-group">
+            <button id="back-btn-result" class="back-button">
+              <i data-lucide="arrow-left" class="icon"></i>
+              Back
+            </button>
+            <button id="restart-btn" class="restart-button">
+              <i data-lucide="refresh-cw" class="icon"></i>
+              Restart Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+   <!-- Footer -->
+  <footer class="footer">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Company Info -->
+          <div>
+            <div class="footer-brand">
+              <div class="footer-brand-icon">
+                <i data-lucide="book-open" class="icon"></i>
+              </div>
+              <span class="footer-brand-text">
+                Book<span style="color: var(--secondary)">Compass</span>
+              </span>
+            </div>
+            <p class="footer-description">
+              Helping readers explore the worlds of science fiction and fantasy — guiding newcomers and fans alike to stories worth discovering.
+            </p>
+            <div class="social-links">
+              <a href="https://www.goodreads.com/user/show/111378369-syed-quadri" class="social-link">
+                <i data-lucide="book-marked" class="icon"></i>
+              </a>
+              <a href="https://app.thestorygraph.com/profile/saquibquadri" class="social-link">
+                <i data-lucide="library-big" class="icon"></i>
+              </a>
+              <a href="www.linkedin.com/in/syed-saquib-quadri" class="social-link">
+                <i data-lucide="linkedin" class="icon"></i>
+              </a>
+              <a href="https://github.com/Syed-Saquib11/Compass" class="social-link">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i data-lucide="sparkle" class="icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-nav">
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="https://archive.org/details/NPRFlowchart">SF Signal's flowchart - direct inspiration</a></li>
+              <li><a href="https://www.npr.org/2011/08/09/139248590/top-100-science-fiction-fantasy-books">NPR's list - which started it all</a></li>
+              <li><a href="https://www.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/">r/Fantasy top novels 2025</a></li>
+              <li><a href="https://www.youtube.com/@DanielGreeneReviews">Daniel Greene (just cause he is my fav book person on internet)</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h4>Get in Touch</h4>
+            <button class="btn-secondary" onclick="openContactModal()">
+              <i data-lucide="send" class="icon"></i>
+              Contact Us
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p class="copyright">
+            Made with ❤ for book lovers everywhere.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title">Get in Touch</h3>
+      <button class="modal-close" onclick="closeContactModal()">×</button>
+    </div>
+    <form id="contactForm" action="https://formspree.io/f/xdkwlnbb" method="POST">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </div>
 
-      </div>
-    </main>
 
-    <footer>
-      <p>Powered by Compass</p>
-    </footer>
-  </div>
+  <!-- JavaScript -->
   <script src="js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
 </body>
 </html>
