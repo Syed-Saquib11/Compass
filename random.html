@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Book | BookCompass</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/styles2.css" />
+  <link rel="stylesheet" href="css/random.css" />
+</head>
+<body>
+ <header class="header">
+    <div class="container">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <div class="logo-icon">
+            <i data-lucide="book-open" class="icon icon-primary"></i>
+          </div>
+          <h1 class="logo-text">
+            Book<span class="logo-accent">Compass</span>
+          </h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="quiz.html" class="nav-link">Quiz</a>
+          <a href="random.html" class="nav-link">Random</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="random-container">
+      <h1>Get a Random Book Recommendation</h1>
+      <p>Click below for a surprise book from our catalogue!</p>
+      <button id="random-btn" class="main-action">Surprise Me!</button>
+      <div id="random-result" class="book-box hidden"></div>
+    </section>
+  </main>
+  
+   <!-- Footer -->
+  <footer class="footer">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Company Info -->
+          <div>
+            <div class="footer-brand">
+              <div class="footer-brand-icon">
+                <i data-lucide="book-open" class="icon"></i>
+              </div>
+              <span class="footer-brand-text">
+                Book<span style="color: var(--secondary)">Compass</span>
+              </span>
+            </div>
+            <p class="footer-description">
+              Helping readers explore the worlds of science fiction and fantasy — guiding newcomers and fans alike to stories worth discovering.
+            </p>
+            <div class="social-links">
+              <a href="https://www.goodreads.com/user/show/111378369-syed-quadri" class="social-link">
+                <i data-lucide="book-marked" class="icon"></i>
+              </a>
+              <a href="https://app.thestorygraph.com/profile/saquibquadri" class="social-link">
+                <i data-lucide="library-big" class="icon"></i>
+              </a>
+              <a href="www.linkedin.com/in/syed-saquib-quadri" class="social-link">
+                <i data-lucide="linkedin" class="icon"></i>
+              </a>
+              <a href="https://github.com/Syed-Saquib11/Compass" class="social-link">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i data-lucide="sparkle" class="icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-nav">
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="https://archive.org/details/NPRFlowchart">SF Signal's flowchart - direct inspiration</a></li>
+              <li><a href="https://www.npr.org/2011/08/09/139248590/top-100-science-fiction-fantasy-books">NPR's list - which started it all</a></li>
+              <li><a href="https://www.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/">r/Fantasy top novels 2025</a></li>
+              <li><a href="https://www.youtube.com/@DanielGreeneReviews">Daniel Greene (just cause he is my fav book person on internet)</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h4>Get in Touch</h4>
+           
+            <button class="btn-secondary" onclick="openContactModal()">
+              <i data-lucide="send" class="icon"></i>
+              Contact Us
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p class="copyright">
+            Made with ❤ for book lovers everywhere.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title">Get in Touch</h3>
+      <button class="modal-close" onclick="closeContactModal()">×</button>
+    </div>
+    <form id="contactForm" action="https://formspree.io/f/xdkwlnbb" method="POST">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- Link to external JavaScript -->
+  <script src="js/app.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  });
+</script>
+  <script src="js/random.js"></script>
+</body>
+</html>
